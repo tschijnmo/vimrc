@@ -22,6 +22,10 @@ Plugin 'easymotion/vim-easymotion'
 
 Plugin 'flazz/vim-colorschemes'
 
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_theme='simple'
+
 Plugin 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger="<c-j>"
 
