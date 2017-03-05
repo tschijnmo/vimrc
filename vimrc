@@ -85,7 +85,8 @@ filetype plugin indent on    " required
 "
 " General settings.
 syntax on
-colorscheme Monokai
+set background=dark
+colorscheme solarized
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
 set spell spelllang=en_gb
