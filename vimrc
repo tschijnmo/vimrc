@@ -85,8 +85,7 @@ filetype plugin indent on    " required
 "
 " General settings.
 syntax on
-set background=dark
-colorscheme solarized
+colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
 set spell spelllang=en_gb
