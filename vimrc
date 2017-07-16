@@ -37,6 +37,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'tpope/vim-sleuth'
 
+Plugin 'bronson/vim-trailing-whitespace'
+
 
 "
 " Generic programming plugins.
