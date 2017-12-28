@@ -13,9 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 "
 " Plugins and their settings.
 "
-"
 " Generic plugins.
 "
+
 Plugin 'tpope/vim-surround'
 
 Plugin 'easymotion/vim-easymotion'
@@ -43,6 +43,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 "
 " Generic programming plugins.
 "
+
 Plugin 'scrooloose/syntastic'
 
 Plugin 'Valloric/YouCompleteMe'
@@ -59,10 +60,13 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 " Programming-language specific plugins.
 "
 " Python
+"
+
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 
 " LaTeX
+
 Plugin 'lervag/vimtex'
 " Use YouCompleteMe for TeX completion as well.
 if !exists('g:ycm_semantic_triggers')
@@ -75,6 +79,9 @@ let g:ycm_semantic_triggers.tex = [
     \ 're!\\(include(only)?|input){[^}]*'
     \ ]
 let g:vimtex_fold_enabled = "1"
+" Disable identifier-based completion for short words.
+autocmd filetype tex let g:ycm_min_num_of_chars_for_completion=12
+autocmd filetype latex let g:ycm_min_num_of_chars_for_completion=12
 
 " HTML/CSS
 Plugin 'mattn/emmet-vim'
