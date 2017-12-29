@@ -62,7 +62,6 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 " Python
 "
 
-Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 
 " LaTeX
