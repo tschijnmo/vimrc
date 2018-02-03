@@ -75,20 +75,6 @@ Plugin 'tell-k/vim-autopep8'
 " LaTeX
 
 Plugin 'lervag/vimtex'
-" Use YouCompleteMe for TeX completion as well.
-if !exists('g:ycm_semantic_triggers')
-    let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers.tex = [
-    \ 're!\\[A-Za-z]*cite[A-Za-z]*(\[[^]]*\]){0,2}{[^}]*',
-    \ 're!\\[A-Za-z]*ref({[^}]*|range{([^,{}]*(}{)?))',
-    \ 're!\\includegraphics\*?(\[[^]]*\]){0,2}{[^}]*',
-    \ 're!\\(include(only)?|input){[^}]*'
-    \ ]
-let g:vimtex_fold_enabled = "1"
-" Disable identifier-based completion for short words.
-autocmd filetype tex let g:ycm_min_num_of_chars_for_completion=12
-autocmd filetype latex let g:ycm_min_num_of_chars_for_completion=12
 
 " HTML/CSS
 Plugin 'mattn/emmet-vim'
@@ -96,6 +82,19 @@ Plugin 'mattn/emmet-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
+" Some configuration to the plugins that has to be put after the end of
+" plugins.
+
+" Use YouCompleteMe for TeX completion from vimtex as well.
+if !exists('g:ycm_semantic_triggers')
+    let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
+let g:vimtex_fold_enabled = "1"
+autocmd filetype latex let g:ycm_auto_trigger = 0
+
 
 " My own settings.
 "
@@ -105,4 +104,7 @@ colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
 set spell spelllang=en_gb
+
+" Language specific settings.
+let g:tex_flavor = 'latex'
 
