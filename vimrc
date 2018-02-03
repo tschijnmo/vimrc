@@ -103,7 +103,7 @@ syntax on
 colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
-set spell spelllang=en_gb
+set spell spelllang=en
 
 " Language specific settings.
 let g:tex_flavor = 'latex'
