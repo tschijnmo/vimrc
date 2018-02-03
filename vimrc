@@ -16,6 +16,14 @@ Plugin 'VundleVim/Vundle.vim'
 " Generic plugins.
 "
 
+Plugin 'scrooloose/nerdtree'
+let NERDTreeRespectWildIgnore = 1
+map <C-n> :NERDTreeToggle<CR>
+
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+Plugin 'octref/RootIgnore'
+
 Plugin 'tpope/vim-surround'
 
 Plugin 'easymotion/vim-easymotion'
