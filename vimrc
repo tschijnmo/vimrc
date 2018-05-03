@@ -57,11 +57,6 @@ Plugin 'bronson/vim-trailing-whitespace'
 
 Plugin 'scrooloose/syntastic'
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_python_binary_path = '/usr/local/bin/python3'
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-
 Plugin 'rhysd/vim-clang-format'
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
@@ -70,14 +65,6 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 "
 " Programming-language specific plugins.
 "
-" Python
-"
-
-Plugin 'tell-k/vim-autopep8'
-
-" LaTeX
-
-Plugin 'lervag/vimtex'
 
 " HTML/CSS
 Plugin 'mattn/emmet-vim'
@@ -90,15 +77,6 @@ filetype plugin indent on    " required
 " Some configuration to the plugins that has to be put after the end of
 " plugins.
 
-" Use YouCompleteMe for TeX completion from vimtex as well.
-if !exists('g:ycm_semantic_triggers')
-    let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
-let g:vimtex_fold_enabled = "1"
-autocmd filetype latex let g:ycm_auto_trigger = 0
-
-
 " My own settings.
 "
 " General settings.
@@ -110,5 +88,4 @@ set sw=4 expandtab
 set spell spelllang=en
 
 " Language specific settings.
-let g:tex_flavor = 'latex'
 
