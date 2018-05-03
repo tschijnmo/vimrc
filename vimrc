@@ -84,7 +84,7 @@ syntax on
 set background=dark
 colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
-set sw=4 expandtab
+set sw=2 expandtab
 set spell spelllang=en
 
 " Language specific settings.
