@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Normalization settings
+set t_Co=256
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -100,6 +103,7 @@ autocmd filetype latex let g:ycm_auto_trigger = 0
 "
 " General settings.
 syntax on
+set background=dark
 colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
