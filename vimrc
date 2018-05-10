@@ -70,13 +70,15 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 "
 " Programming-language specific plugins.
 "
-" Python
-"
 
+" Markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Python
 Plugin 'tell-k/vim-autopep8'
 
 " LaTeX
-
 Plugin 'lervag/vimtex'
 
 " HTML/CSS
