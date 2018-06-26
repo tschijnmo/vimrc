@@ -89,3 +89,6 @@ set spell spelllang=en
 
 " Language specific settings.
 
+" Platform specific settings.
+set t_Cs=
+
