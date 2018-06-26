@@ -48,6 +48,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'tpope/vim-sleuth'
 
+Plugin 'mkitt/tabline.vim'
+
 Plugin 'bronson/vim-trailing-whitespace'
 
 
@@ -110,6 +112,11 @@ colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
 set spell spelllang=en
+
+" Tab colours.
+:hi TabLineFill ctermfg=DarkGrey ctermbg=235
+:hi TabLine ctermfg=DarkGrey ctermbg=235
+:hi TabLineSel ctermfg=LightGrey ctermbg=239
 
 " Language specific settings.
 let g:tex_flavor = 'latex'
