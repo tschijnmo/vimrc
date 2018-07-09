@@ -117,6 +117,7 @@ colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=4 expandtab
 set spell spelllang=en
+runtime macros/matchit.vim
 
 " Tab colours.
 :hi TabLineFill ctermfg=DarkGrey ctermbg=235
