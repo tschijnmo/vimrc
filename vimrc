@@ -45,6 +45,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'ctrlpvim/ctrlp.vim'
+nmap <Leader>b :CtrlPBuffer<CR>
 
 Plugin 'tpope/vim-sleuth'
 
