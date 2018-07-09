@@ -45,12 +45,17 @@ Plugin 'honza/vim-snippets'
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'ctrlpvim/ctrlp.vim'
+nmap <Leader>b :CtrlPBuffer<CR>
 
 Plugin 'tpope/vim-sleuth'
 
 Plugin 'mkitt/tabline.vim'
 
 Plugin 'bronson/vim-trailing-whitespace'
+
+Plugin 'tpope/vim-unimpaired'
+
+Plugin 'tpope/vim-commentary'
 
 
 "
@@ -92,6 +97,7 @@ colorscheme base16-atelierforest
 set backspace=indent,eol,start " backspace over everything in insert mode
 set sw=2 expandtab
 set spell spelllang=en
+runtime macros/matchit.vim
 
 " Tab colours.
 :hi TabLineFill ctermfg=DarkGrey ctermbg=235
