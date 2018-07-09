@@ -53,6 +53,10 @@ Plugin 'mkitt/tabline.vim'
 
 Plugin 'bronson/vim-trailing-whitespace'
 
+Plugin 'tpope/vim-unimpaired'
+
+Plugin 'tpope/vim-commentary'
+
 
 "
 " Generic programming plugins.
