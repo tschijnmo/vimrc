@@ -44,6 +44,7 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'airblade/vim-gitgutter'
 
+let g:ctrlp_max_depth = 8
 Plugin 'ctrlpvim/ctrlp.vim'
 nmap <Leader>b :CtrlPBuffer<CR>
 
@@ -80,6 +81,16 @@ Plugin 'plasticboy/vim-markdown'
 " HTML/CSS
 Plugin 'mattn/emmet-vim'
 
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+:let g:ruby_indent_block_style = 'do'
+Plugin 'tpope/vim-rails'
+
+" Scala
+Plugin 'derekwyatt/vim-scala'
+let g:scala_scaladoc_indent = 1
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -105,6 +116,9 @@ runtime macros/matchit.vim
 :hi TabLineSel ctermfg=LightGrey ctermbg=239
 
 " Language specific settings.
+
+" Meraki manage specific settings.
+let g:ctrlp_root_markers = ['build.sbt']
 
 " Platform specific settings.
 set t_Cs=
