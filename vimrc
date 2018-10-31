@@ -22,6 +22,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 let NERDTreeRespectWildIgnore = 1
 map <C-n> :NERDTreeToggle<CR>
+nmap ,n :NERDTreeFind<CR>
+nmap ,m :NERDTreeToggle<CR>
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
