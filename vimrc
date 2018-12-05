@@ -60,6 +60,8 @@ Plugin 'tpope/vim-unimpaired'
 
 Plugin 'tpope/vim-commentary'
 
+Plugin 'tpope/vim-repeat'
+
 
 "
 " Generic programming plugins.
