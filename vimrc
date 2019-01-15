@@ -48,6 +48,7 @@ Plugin 'airblade/vim-gitgutter'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 nmap <Leader>b :CtrlPBuffer<CR>
+nmap <Leader>t :CtrlPTag<CR>
 
 Plugin 'tpope/vim-sleuth'
 
