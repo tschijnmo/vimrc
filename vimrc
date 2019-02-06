@@ -44,6 +44,8 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 
 Plugin 'honza/vim-snippets'
 
+Plugin 'tpope/vim-fugitive'
+
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'ctrlpvim/ctrlp.vim'
